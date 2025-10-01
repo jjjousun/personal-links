@@ -1,0 +1,10 @@
+ {% extends "base.html" %}
+
+ {% block content %}
+ 
+ <h1>{{ user.username }}'s MyLinks!</h1>
+        {% for link in links %}
+        <div><p><a href="{{ link.url }}">{{ link.text }}</a></p></div>
+        {% endfor %}
+
+{% endblock %}
